@@ -1,11 +1,24 @@
 <template>
   <div id="app">
-    <router-view/>
+    <Home />
   </div>
 </template>
 
-<style>
-  body{
-    padding-right: 0px!important;
+<script>
+import Home from './views/Home.vue'
+export default {
+  name: 'App',
+  components: { Home },
+  data () {
+    return {
+      // films: []
+    }
   }
+}
+</script>
+
+<style scoped>
+  /* @import './assets/css/App.css'; */
+  /* src="@/assets/App.css" */
+  /* @import '@/assets/App.css'; */
 </style>
