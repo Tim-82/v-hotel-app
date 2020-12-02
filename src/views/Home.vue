@@ -1,22 +1,20 @@
 <template>
-  <div>
-    <Navbar />
-    <!-- <router-view/> -->
+  <div class="defaultHero">
+    <div class="banner">
+      <h1>luxurious rooms</h1>
+      <div />
+      <p>deluxe rooms starting at $299</p>
+      <router-link class="btn-primary" :to="{name: 'home'}" tag="button">our rooms</router-link>
+    </div>
   </div>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
-
 export default {
-  name: 'Home',
-  components: {
-    Navbar
-  },
-  data () {
-    return {
-      films: []
-    }
-  }
+
 }
 </script>
+
+<style>
+
+</style>
