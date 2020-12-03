@@ -1,8 +1,8 @@
 <template>
   <div className="banner">
-    <h1>luxurious rooms"</h1>
+    <h1>luxurious roomsd</h1>
     <p>deluxe rooms starting at $299</p>
-  </div>
+  </div> <!-- D -->
 </template>
 
 <script>

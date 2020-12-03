@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Rooms from '@/components/Rooms.vue'
-import SingleRooms from '@/components/SingleRoom.vue'
+// import Rooms from '@/components/Rooms.vue'
+// import SingleRooms from '@/components/SingleRoom.vue'
 
 Vue.use(VueRouter)
 
@@ -15,12 +15,17 @@ const routes = [
   {
     path: '/rooms/',
     name: 'rooms',
-    component: Rooms
+    component: () => import('@/components/Rooms.vue')
   },
   {
     path: '/rooms/:id',
     name: 'singleRooms',
-    component: SingleRooms
+    component: () => import('@/components/SingleRoom.vue')
+  },
+  {
+    path: '*',
+    name: 'error',
+    component: () => import('../views/Error.vue')
   }
 ]
 

@@ -117,7 +117,7 @@ h6 {
   transition: var(--mainTransition);
   list-style-type: none;
 }
-.nav-links a {
+.nav-links li {
   display: block;
   text-decoration: none;
   padding: 1rem 0;
@@ -128,7 +128,7 @@ h6 {
   font-weight: 600;
   letter-spacing: var(--mainSpacing);
 }
-.nav-links a:hover {
+.nav-links li:hover {
   color: var(--primaryColor);
 }
 
@@ -149,7 +149,7 @@ h6 {
     display: flex;
     margin-left: 4rem;
   }
-  .nav-links a {
+  .nav-links li {
     margin: 0 1rem;
     padding: 0.5rem 0;
   }

@@ -4,7 +4,7 @@
       <h1>luxurious rooms</h1>
       <div />
       <p>deluxe rooms starting at $299</p>
-      <router-link class="btn-primary" :to="{name: 'home'}" tag="button">our rooms</router-link>
+      <router-link class="btn-primary" :to="{name: 'rooms'}" tag="button">our rooms</router-link>
     </div>
   </div>
 </template>
