@@ -1,5 +1,10 @@
 <template>
   <div class="roomsHero">
+    <div class="banner">
+      <h1>Our Rooms</h1>
+      <div />
+      <router-link class="btn-primary" :to="{name: 'home'}" tag="button">return home</router-link>
+    </div>
   </div>
 </template>
 
