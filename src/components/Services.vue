@@ -1,5 +1,5 @@
 <template>
-  <div className="section-title">
+  <div class="section-title">
     <h4>services</h4>
     <div />
     </div>
