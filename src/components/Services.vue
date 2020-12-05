@@ -11,7 +11,8 @@
         :key="index"
         class="service"
       >
-        <span>{{item.icon}}</span>
+        <!-- <span>{{item.icon}}</span> -->
+        <span><i :class=item.icon></i></span>
         <h6>{{item.title}}</h6>
         <p>{{item.info}}</p>
       </article>
@@ -26,22 +27,22 @@ export default {
     return {
       services: [
         {
-          icon: '<i class="fas fa-cocktail"></i>',
+          icon: 'fas fa-cocktail',
           title: 'Free coctails',
           info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!'
         },
         {
-          icon: '<i class="fas fa-hiking"></i>',
+          icon: 'fas fa-hiking',
           title: 'Endless Hiking',
           info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!'
         },
         {
-          icon: '<i class="fas fa-shuttle-van"></i>',
+          icon: 'fas fa-shuttle-van',
           title: 'Free shuttle',
           info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!'
         },
         {
-          icon: '<i class="fas fa-beer"></i>',
+          icon: 'fas fa-beer',
           title: 'Strongest Beer',
           info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!'
         }
