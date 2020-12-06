@@ -9,20 +9,22 @@
       </div>
     </div>
     <Services/>
+    <FeaturedRooms/>
   </div>
 </template>
 
 <script>
 import Services from '@/components/Services'
+import FeaturedRooms from '@/components/FeaturedRooms'
 
 export default {
   name: 'Home',
   components: {
-    Services
+    Services,
+    FeaturedRooms
   }
 }
 </script>
 
 <style>
-
 </style>
