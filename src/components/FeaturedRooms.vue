@@ -5,13 +5,17 @@
       <div />
     </div>
     <div class="featured-rooms-center">
-      <!-- <Loading /> -->
+      <Loading />
     </div>
   </section>
 </template>
 
 <script>
+import Loading from './Loading.vue'
 export default {
+  components: {
+    Loading
+  },
   data () {
     return {
       rooms: [],
