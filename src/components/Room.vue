@@ -1,6 +1,8 @@
 <template>
   <article class="room">
-    <img src="{}" alt="" />
+    <div class="img-container">
+      <img src="{}" alt="" />
+    </div>
   </article>
 </template>
 
