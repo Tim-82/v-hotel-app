@@ -22,6 +22,17 @@ export default {
   components: {
     Services,
     FeaturedRooms
+  },
+  data () {
+    return {}
+  },
+  created () {
+    this.get_data_from_api()
+  },
+  methods: {
+    get_data_from_api () {
+      this.$store.dispatch('GET_DATA_FROM_API')
+    }
   }
 }
 </script>
