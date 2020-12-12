@@ -7,26 +7,41 @@
         <div />
       </div>
       <div class="featured-rooms-center">
-        <Loading />
+        <article class="room">
+          <div class="img-container">
+            <img
+              v-for="(f_room, index) in featuredRooms"
+              :key=index
+              :src="f_room[0]"
+              alt="single room"
+            >
+          </div>
+        </article>
       </div>
+      <!-- <Loading /> -->
     </section>
   </div>
 </template>
 
 <script>
-import Loading from './Loading.vue'
+// import Loading from './Loading.vue'
 import Room from './Room.vue'
 
 export default {
   components: {
-    Loading,
+    // Loading,
     Room
+  },
+  props: {
+    featuredRooms: {
+      type: Array,
+      required: true
+    }
   },
   data () {
     return {
       rooms: [],
       sortedRooms: [],
-      featuredRooms: [],
       loading: true
     }
   }

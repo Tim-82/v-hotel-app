@@ -9,7 +9,9 @@
       </div>
     </div>
     <Services/>
-    <FeaturedRooms/>
+    <FeaturedRooms
+      :featuredRooms = featuredRooms
+    />
   </div>
 </template>
 
@@ -25,6 +27,11 @@ export default {
   },
   data () {
     return {}
+  },
+  computed: {
+    featuredRooms () {
+      return this.$store.getters.GET_FEATURED_ROOMS
+    }
   },
   created () {
     this.get_data_from_api()
